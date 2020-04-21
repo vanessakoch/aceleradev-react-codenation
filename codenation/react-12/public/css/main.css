@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	padding-top: 56px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #FAFAFA;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 728px) {
+	.container {
+		width: 728px;
+	}
+}
+
+.header {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	backface-visibility: hidden;
+	padding: 8px 18px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+
+}
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo {
+	display: inline-block;
+	height: 40px;
+	size: 10em;
+}
+
+.header__logo img {
+	height: 100%;
+}
+
+.header__inbox {
+	font-size: 1.6rem;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+}
+
+.storie {
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+	padding: 16px 0;
+}
+
+.storie__list {
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.storie__user {
+	display: flex;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.storie__user img {
+	height: 100%;
+	width: 100%;
+}
+
+.storie .storie__user {
+	width: 78px;
+	margin: 0 8px;
+	height: 78px;
+	justify-content: center;
+	align-items: center;
+}
+
+.storie__user__img {
+	border-radius: 100%;
+	border: 2px solid white;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.storie .storie__user__img {
+	height: 72px;
+	width: 72px;
+}
+
+.storie__user--new {
+	background: linear-gradient(45deg, rgba(245,160,77,1) 0%, rgba(160,15,139,1) 100%);
+}
+
+.posts {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+}
+
+@media screen and (min-width: 728px) {
+	.posts {
+		padding: 16px 0;
+	}
+}
+
+.card {
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, .1);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.card__header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+}
+
+.card__user {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+}
+
+.card__avatar {
+	display: flex;
+	border-radius: 100%;
+	overflow: hidden;
+	height: 40px;
+	margin-right: 8px;
+	width: 40px;
+}
+
+.card_name {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.card__options {
+	font-size: 1.4rem;
+}
+
+.card__figure {
+	margin: 0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.card__figure img {
+	width: 100%;
+}
+
+.card__reactions {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 4px 0;
+}
+
+.card__react {
+	font-size: 2.4rem;
+	margin: 0 8px;
+}
+
+.card__react:last-of-type {
+	justify-self: flex-end;
+	margin-left: auto;
+}
+
+.card__status {
+	background-color: rgba(0, 0, 0, 0.05);
+	display: flex;
+	padding: 8px;
+}
+
+.card__status .card__user span {
+	font-size: 1.2rem;
+}
+
+.card_profile {
+	height: 30px;
+	width: 30px;
+	display: flex;
+	margin-right: 8px;
+	border-radius: 100%;
+	overflow: hidden;
+}
